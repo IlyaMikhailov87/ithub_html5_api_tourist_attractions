@@ -1,0 +1,124 @@
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(212, 244, 200, 0.05);
+}
+
+header {
+    background-color: rgba(102, 98, 98, 0.808);
+    color: azure;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+main {
+    flex: 1 1 auto;
+    background-color: rgb(244, 245, 238);
+    padding-top: 25px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-info {
+    padding-bottom: 40px;
+}
+
+#weather-datе {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#weather-data {
+    font-size: 20px;
+}
+
+#weather-picture {
+    display: block;
+}
+
+footer {
+    background-color: rgba(102, 98, 98, 0.808);
+    width: 100%;
+    color: azure;
+}
+
+#footer_center {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+
+#footer_center a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: azure;
+}
+
+.add-marker-button {
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    transition: background-color 0.3s;
+}
+
+.add-marker-button:hover {
+    background-color: deepskyblue;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        margin: 0 25px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    #weather-datе {
+        font-size: 16px;
+    }
+
+    #weather-data {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+}

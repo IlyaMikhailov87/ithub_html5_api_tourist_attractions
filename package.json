@@ -1,0 +1,15 @@
+{
+    "name": "ithub_html5_api_tourist_attractions",
+    "version": "1.0.0",
+    "description": "Простое приложение с интеграцией API Яндекс карт и Яндекс погоды, определением и сохранением в LocalStorage геопозиции пользователя, добавлением кастомных маркеров с фото на карту с сохранением в LocalStorage",
+    "main": "weather-proxy.js",
+    "scripts": {
+        "start": "node weather-proxy.js"
+    },
+    "type": "module",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "node-fetch": "^2.7.0"
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путеводитель по городу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <h1>
+                Привет! Этот сайт поможет найти ближайшие достопримечательности.
+            </h1>
+            <p>
+                Добро пожаловать на наш сайт, где вы можете легко найти самые интересные достопримечательности рядом с
+                вами! С помощью удобной карты мы поможем вам открыть новые места и спланировать незабываемые прогулки.
+                Просто выберите местоположение — и отправляйтесь исследовать мир вокруг себя. А отображение текущей
+                погоды поможет вам подобрать комфортную отдежду. Посещенные места вы можете отмечать маркерами и
+                добавлять к ним фото, они останутся доступны и после обновления страницы.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="map-test" style="height: 50vh;">
+            </div>
+
+            <div id="weather-info">
+                <div id="weather-datе">Погода:</div>
+                <div class=weather>
+                    <img id="weather-picture" src="" alt=""></img>
+                    <div id="weather-data">Загрузка данных...
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <input type="file" id="imageUpload" accept="image/*"
+                    aria-label="Загрузить изображение для маркера">
+                <button id="add-marker"
+                    aria-label="Добавить маркер с загруженным изображением">Добавить
+                    маркер с изображением
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_center">
+            <a href="">В начало</a>
+            <p>
+                &#169 2024 Михайлов Илья, mikhayloviv23@st.ithub.ru
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f92c2e23-bcbb-4f39-9aed-b2ede87be41e&lang=ru_RU"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
